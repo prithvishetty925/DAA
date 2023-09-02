@@ -1,9 +1,9 @@
-def is_prime(number):
-    if number <= 1:
+def is_prime(n):
+    if n <= 1:
         return False
-    if number <= 3:
+    if n <= 3:
         return True
-    if number % 2 == 0 or number % 3 == 0:
+    if n % 2 == 0 or n % 3 == 0:
         return False
 n = int(input("Enter a number: "))
 
