@@ -11,14 +11,12 @@ def binary_search(arr, target):
         else:
             right = mid - 1
 
-    return -1  # Element not found in the list
-
-# Example usage:
+    return -1 
 sorted_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-target_element = 5
-result = binary_search(sorted_list, target_element)
+n=int(input("enter the element:"))
+result = binary_search(sorted_list, n)
 
 if result != -1:
-    print(f"Element {target_element} found at index {result}")
+    print("Element is found at index",result)
 else:
-    print(f"Element {target_element} not found in the list")
+    print("Element is not found in the list")
