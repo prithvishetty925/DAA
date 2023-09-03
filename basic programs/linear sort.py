@@ -1,15 +1,16 @@
-def linear_search(arr, target):
-    for i, element in enumerate(arr):
-        if element == target:
-            return i  
-    return -1  
+def counting_sort(arr):
+    max_val = max(arr)
+    min_val = min(arr)
+    
+    count = [0] * (max_val - min_val + 1)
+    for num in arr:
+        count[num - min_val] += 1
+    sorted_arr = []
+    for i in range(len(count)):
+        sorted_arr.extend([i + min_val] * count[i])
+    
+    return sorted_arr
 
-my_list = [4, 2, 7, 1, 9, 5]
-n=int(input("enter the element:"))
-
-result = linear_search(my_list, n)
-
-if result != -1:
-    print(f"Element found at index",result)
-else:
-    print(f"Element not found in the list.")
+arr = [4, 2, 2, 8, 3, 3, 1]
+sorted_arr = counting_sort(arr)
+print("Sorted array:", sorted_arr)
