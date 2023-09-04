@@ -1,4 +1,4 @@
-mport heapq
+import heapq
 
 class Node:
     def __init__(self, freq, symbol, left=None, right=None):
@@ -79,3 +79,17 @@ print("Decoded text:", decoded_text)
 text_input = input("Enter text to encode: ")
 encoded_binary_text = encode_text(text_input, huffman_tree)
 print("Encoded binary text:", encoded_binary_text)
+
+/*OUTPUT
+Enter the number of edges in the graph: 7
+Enter the edges in the format 'node1 node2 weight':
+A B 3
+B C 4
+C D 5
+A D 2
+D E 4
+C E 6
+B D 2
+Enter the start node: A
+Enter the destination node: E
+Optimal route: ['A', 'D', 'E'] */
