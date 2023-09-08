@@ -80,16 +80,18 @@ text_input = input("Enter text to encode: ")
 encoded_binary_text = encode_text(text_input, huffman_tree)
 print("Encoded binary text:", encoded_binary_text)
 
+
 /*OUTPUT
-Enter the number of edges in the graph: 7
-Enter the edges in the format 'node1 node2 weight':
-A B 3
-B C 4
-C D 5
-A D 2
-D E 4
-C E 6
-B D 2
-Enter the start node: A
-Enter the destination node: E
-Optimal route: ['A', 'D', 'E'] */
+Enter characters: a b c d e f g
+Enter frequencies: 11 3 5 2 8 5 8
+e -> 00
+c -> 010
+f -> 011
+a -> 10
+d -> 1100
+b -> 1101
+g -> 111
+Enter the encoded text: 10010110
+Decoded text: ac
+Enter text to encode: egg
+Encoded binary text: 00111111 */
